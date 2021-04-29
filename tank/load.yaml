@@ -1,0 +1,17 @@
+phantom:
+  address: localhost:9999
+  uris:
+    - /
+  headers:
+    - "[Host: localhost]"
+    - "[Connection: close]"
+  load_profile:
+    load_type: rps
+    schedule: line(1, 100, 1m)
+console:
+  enabled: true
+telegraf:
+  enabled: false
+overload:
+  enabled: true
+  token_file: token.txt
